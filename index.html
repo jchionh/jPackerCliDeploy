@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<!-- get the css in -->
+<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+<link rel="stylesheet" type="text/css" href="css/xlb1.css" />
+<!-- load google CDN's jquery -->
+<!-- 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+ -->
+ 
+<script type="text/javascript">
+	// When the window has loaded, DOM is ready. Run the draw() function.
+	function init() {
+		window.mainInit();
+	}
+	
+	window.onload = init;  
+</script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>jPacker</title>
+</head>
+<body class="unselectable">
+
+<button type="button" onclick="window.GetPacked();">Get Packed</button>
+
+<span id="stackInfo"></span>
+
+<div id="renderArea" style="position: relative;">
+	<div id="hudBeforeCanvas" style="position: absolute; left: 0px; top: 0px; width: 1024px; height: 768px;""></div>
+	<canvas id="renderCanvas" width="1024" height="768" style="position: absolute; left: 0px; top: 0px;"></canvas>
+</div>
+<script src="jPacker.min.js"></script>
+</body>
+</html>
